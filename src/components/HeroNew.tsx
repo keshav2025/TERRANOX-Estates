@@ -20,7 +20,7 @@ const HeroNew: React.FC = () => {
      
    <video
   className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-[0.7] contrast-[1.2] saturate-[1.2]"
-  src="https://videos.pexels.com/video-files/32905187/14023794_2560_1440_24fps.mp4"
+  src="https://videos.pexels.com/video-files/5057526/5057526-uhd_2560_1440_25fps.mp4" //https://videos.pexels.com/video-files/5057526/5057526-uhd_2560_1440_25fps.mp4
   autoPlay
   muted
   loop
