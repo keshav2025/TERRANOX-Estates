@@ -13,7 +13,7 @@ import Builders from './components/Builders'; // <- import this if route needed
 function App() {
   return (
     <Router>
-      <div className="min-h-screen">
+      <div className="overflow-x-hidden">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
