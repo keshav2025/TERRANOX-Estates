@@ -20,7 +20,7 @@ const HeroNew: React.FC = () => {
      
    <video
   className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-[0.7] contrast-[1.2] saturate-[1.2]"
-  src="https://videos.pexels.com/video-files/27740272/12215489_1920_1080_30fps.mp4"
+  src="https://videos.pexels.com/video-files/32905187/14023794_2560_1440_24fps.mp4"
   autoPlay
   muted
   loop
@@ -28,14 +28,14 @@ const HeroNew: React.FC = () => {
   preload="auto"
   aria-hidden="true"
 ></video>
-<div className="absolute inset-0 z-10 bg-gradient-to-b from-[#000000cc] via-[#00000088] to-[#FFD70033] mix-blend-overlay"></div>
+{/* <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#000000cc] via-[#00000088] to-[#FFD70033] mix-blend-overlay"></div>
 
   {/* Vignette */}
-  <div className="absolute inset-0 z-20 bg-black opacity-20 pointer-events-none"></div>
+  {/* <div className="absolute inset-0 z-20 bg-black opacity-20 pointer-events-none"></div> */} 
 
 
       {/* 🔲 Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-10"></div>
+      {/* <div className="absolute inset-0 bg-black/60 z-10"></div> */}
 
       {/* 🔤 Content */}
       <div className="max-w-4xl mx-auto bg-white/30 border border-white/20 rounded-2xl px-4 py-6 md:p-6 shadow-2xl z-20 w-full">
@@ -81,21 +81,27 @@ const HeroNew: React.FC = () => {
             </div>
 
             {/* Disabled City Input */}
-            <div className="flex-1 w-full">
-              <div className="flex items-center bg-gray-100 rounded-lg px-4 py-3">
-                <span className="text-gray-400 mr-2">
-                  <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2Z" />
-                  </svg>
-                </span>
-                <input
-                  type="text"
-                  placeholder="All Cities"
-                  className="bg-transparent outline-none w-full text-gray-800 placeholder-gray-600"
-                  disabled
-                />
-              </div>
-            </div>
+           {/* City Dropdown Input */}
+<div className="flex-1 w-full">
+  <div className="flex items-center bg-gray-100 rounded-lg px-4 py-3">
+    <span className="text-gray-400 mr-2">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2Z" />
+      </svg>
+    </span>
+
+    <select
+      className="bg-transparent outline-none w-full text-gray-800 placeholder-gray-600"
+      defaultValue=""
+    >
+      <option value="" disabled>Select City</option>
+      <option value="Noida">Noida</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Gurgaon">Gurgaon</option>
+    </select>
+  </div>
+</div>
+
           </div>
 
           {/* Search Button */}

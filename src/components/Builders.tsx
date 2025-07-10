@@ -57,10 +57,10 @@ const Builders = () => {
             </h2>
             <p className="text-gray-600">Making your money make money</p>
           </div>
-          <button className="hidden md:flex items-center space-x-2 text-gray-700 hover:text-orange-600 transition-colors font-medium">
+          <a href='/projects' className="hidden md:flex items-center space-x-2 text-gray-700 hover:text-orange-600 transition-colors font-medium">
             <span>See All Builders</span>
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </a>
         </div>
 
         {/* Builder Cards */}

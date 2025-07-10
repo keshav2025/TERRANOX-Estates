@@ -6,7 +6,7 @@ const projects = [
     developer: 'Elan India',
     location: 'Sector 66, Gurugram',
     price: '1.1 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/167_img.jpg',
+    image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg',
     status: 'Under Construction',
   },
   {
@@ -14,7 +14,7 @@ const projects = [
     developer: 'Elan India',
     location: 'Sector 50, Gurugram',
     price: '2.19 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/736_img.jpg',
+    image: 'https://images.pexels.com/photos/15059576/pexels-photo-15059576.jpeg',
     status: 'Under Construction',
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     developer: 'Elan India',
     location: 'Sector 106, Gurugram',
     price: '1 Cr*',
-    image: 'https://estatexlandbase.com/public/uploads/slider/167_img.jpg',
+    image: 'https://images.pexels.com/photos/32937258/pexels-photo-32937258.jpeg',
     status: 'New Launch',
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     developer: 'Elan India',
     location: 'Sector 84, Gurugram',
     price: '55 Lakh* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/736_img.jpg',
+    image: ' https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg',
     status: 'Under Construction',
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     developer: 'Elan India',
     location: 'Sector 70, Gurugram',
     price: '1.80 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/167_img.jpg',
+    image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg',
     status: 'Under Construction',
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     developer: 'Elan India',
     location: 'NH-8, Sector-80, Gurugram',
     price: '75.0 Lac',
-    image: 'https://estatexlandbase.com/public/uploads/slider/736_img.jpg',
+    image: ' https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg',
     status: 'Under Construction',
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     developer: 'Elan India',
     location: 'Sector 67, Gurugram',
     price: '31.0 Lac',
-    image: 'https://estatexlandbase.com/public/uploads/slider/167_img.jpg',
+    image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg',
     status: 'Completed',
   },
   {
@@ -62,7 +62,7 @@ const projects = [
     developer: 'M3M India',
     location: 'Sector 57, Gurugram',
     price: '1.2 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/736_img.jpg',
+    image: ' https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg',
     status: 'New Launch',
   },
   {
@@ -70,7 +70,7 @@ const projects = [
     developer: 'M3M India',
     location: 'Sector 113, Gurugram',
     price: '2.5 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/167_img.jpg',
+    image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg',
     status: 'Under Construction',
   },
   {
@@ -78,7 +78,7 @@ const projects = [
     developer: 'M3M India',
     location: 'Sector 71, Gurugram',
     price: '1.7 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/736_img.jpg',
+    image: ' https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg',
     status: 'Completed',
   },
   {
@@ -86,7 +86,7 @@ const projects = [
     developer: 'M3M India',
     location: 'Sector 74, Gurugram',
     price: '1.3 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/167_img.jpg',
+    image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg',
     status: 'Under Construction',
   },
   {
@@ -94,7 +94,7 @@ const projects = [
     developer: 'M3M India',
     location: 'Sector 73, Gurugram',
     price: '1.1 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/736_img.jpg',
+    image: ' https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg',
     status: 'Under Construction',
   },
   {
@@ -102,7 +102,7 @@ const projects = [
     developer: 'M3M India',
     location: 'Sector 67, Gurugram',
     price: '1.6 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/167_img.jpg',
+    image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg',
     status: 'Completed',
   },
   {
@@ -110,7 +110,7 @@ const projects = [
     developer: 'M3M India',
     location: 'Sector 74, Gurugram',
     price: '1.9 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/736_img.jpg',
+    image: ' https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg',
     status: 'New Launch',
   },
   {
@@ -118,7 +118,7 @@ const projects = [
     developer: 'M3M India',
     location: 'Sector 67, Gurugram',
     price: '1.4 Cr* Onwards',
-    image: 'https://estatexlandbase.com/public/uploads/slider/167_img.jpg',
+    image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg',
     status: 'Under Construction',
   },
   {
@@ -134,7 +134,7 @@ const projects = [
     developer: 'ATS',
     location: 'Sector 124, Noida',
     price: '7.5 Cr* Onwards',
-    image: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg',
     status: 'Under Construction',
   },
   {
