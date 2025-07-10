@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
-import logo from '/logo0.png';
+import logo from '/logo1.webp';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -20,6 +20,7 @@ const Navbar = () => {
          <Link to="/" className="flex items-center space-x-4">
   <img
     src={logo}
+    loading='lazy'
     alt="Terranox Logo"
     className="h-16 w-auto object-contain" // ⬅️ Increased height (was h-12)
   />

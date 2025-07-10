@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, Link , Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
-import logo from '/logo0.png'; 
+import logo from '/logo1.webp'; 
 
 const Footer = () => {
   return (
@@ -11,7 +11,8 @@ const Footer = () => {
     {/* Company Info */}
 <div className="lg:col-span-1">
   <div className="flex items-center space-x-4 mb-4">
-    <img src={logo} alt="Logo" className="w-12 h-12 rounded-md" />
+  <img src={logo} alt="Logo" loading="lazy" className="w-12 h-12 rounded-md" />
+
     <span className="text-[#FFD180] font-bold text-xl">TERRANOX Estates</span>
   </div>
 

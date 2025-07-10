@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { lazy, Suspense } from "react";
 import HeroNew from '../components/HeroNew';
 import PropertyTypes from '../components/PropertyTypes';
 import TrendingLocations from '../components/TrendingLocations';
@@ -16,6 +16,9 @@ const Home = () => {
       <About />
       <Builders />
       <PopularProperties />
+      <Suspense fallback={<div>Loading...</div>}>
+        <ProjectsSection />
+      </Suspense>
     </>
   );
 };
