@@ -69,17 +69,7 @@ const Career = () => {
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         
         {/* About Company Dropdown */}
-        <div className="absolute top-20 left-1/4 transform -translate-x-1/2">
-          <div className="bg-gray-900 rounded-lg p-4 min-w-48">
-            <h3 className="text-orange-400 font-semibold mb-3">About Company</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-white hover:text-orange-300 transition-colors text-sm">About Estatex</a></li>
-              <li><a href="#" className="text-white hover:text-orange-300 transition-colors text-sm">Our Mission & Vision</a></li>
-              <li><a href="#" className="text-white hover:text-orange-300 transition-colors text-sm">Why Choose Us</a></li>
-              <li><a href="#" className="text-white hover:text-orange-300 transition-colors text-sm">Certificates & Awards</a></li>
-            </ul>
-          </div>
-        </div>
+     
         
         <div className="relative z-10 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Career</h1>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
-import logo from '/logo.jpeg';
+import logo from '/logo0.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -13,68 +13,87 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-[#130a06] text-[#facc15] py-4 fixed w-full top-0 z-50">
+    <nav className="bg-[#120A07] text-[#FFD180] py-4 fixed w-full top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
-              <img src={logo} alt="Logo" className="w-24 h-auto" />
-            </div>
-            <div>
-              <div className="text-yellow-500 font-bold text-xl">TERRANOX</div>
-              <div className="text-l text-gray-000 -mt-1">Estates</div>
-            </div>
-          </Link>
+          {/* ✅ Updated Logo */}
+         <Link to="/" className="flex items-center space-x-4">
+  <img
+    src={logo}
+    alt="Terranox Logo"
+    className="h-16 w-auto object-contain" // ⬅️ Increased height (was h-12)
+  />
+  <div className="leading-tight font-[Poppins]"> {/* Apply custom font */}
+    <h1 className="text-xl font-extrabold tracking-wider text-[#FFD180]">
+      TERRANOX
+    </h1>
+    <p className="text-sm md:text-base uppercase tracking-[0.2em] text-[#f6c979] font-semibold italic">
+      Estates
+    </p>
+  </div>
+</Link>
+
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <Link to="/" className={`transition-colors ${isActive('/') ? 'text-amber-400' : 'hover:text-amber-300'}`}>
+          <div className="hidden lg:flex items-center text-[#F6C979] space-x-8">
+            <Link to="/" className={`transition-colors ${isActive('/') ? 'text-[#F6C979]' : 'hover:text-amber-300'}`}>
               Home
             </Link>
+<div>
+  <Link
+    to="/about-company"
+    className={`flex items-center space-x-1 transition-colors ${
+      isActive('/about-company') ? 'text-[#FFD180]' : 'hover:text-[#FFD183]'
+    }`}
+  >
+    <span>About Company</span>
+  </Link>
+</div>
 
-            <div
-              className="relative group"
-              onMouseEnter={() => setShowAboutDropdown(true)}
-              onMouseLeave={() => setShowAboutDropdown(false)}
-            >
-              <button className={`flex items-center space-x-1 transition-colors ${isActive('/about-company') ? 'text-orange-400' : 'hover:text-orange-300'}`}>
-                <span>About Company</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              {showAboutDropdown && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg py-2">
-                  <Link to="/about-company" className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300">About Estatex</Link>
-                  <a href="#" className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300">Our Mission & Vision</a>
-                  <a href="#" className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300">Why Choose Us</a>
-                  <a href="#" className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300">Certificates & Awards</a>
-                </div>
-              )}
-            </div>
+            <div className="relative">
+  <button
+    onClick={() => setShowProjectsDropdown((prev) => !prev)}
+    className={`flex items-center space-x-1 transition-colors ${
+      isActive('/projects') ? 'text-[#FFD180]' : 'hover:text-[#FFD183]'
+    }`}
+  >
+    <span>Projects</span>
+    <ChevronDown className="w-4 h-4" />
+  </button>
 
-            <div
-              className="relative group"
-              onMouseEnter={() => setShowProjectsDropdown(true)}
-              onMouseLeave={() => setShowProjectsDropdown(false)}
-            >
-              <button className={`flex items-center space-x-1 transition-colors ${isActive('/projects') ? 'text-orange-400' : 'hover:text-orange-300'}`}>
-                <span>Projects</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              {showProjectsDropdown && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg py-2">
-                  <Link to="/projects?type=SCO" className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300">SCO</Link>
-                  <Link to="/projects?type=Commercial" className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300">Commercial</Link>
-                  <Link to="/projects?type=Residential" className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300">Residential</Link>
-                </div>
-              )}
-            </div>
+  {showProjectsDropdown && (
+    <div className="absolute top-full left-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg py-2 z-50">
+      <Link
+        to="/projects?type=SCO"
+        onClick={() => setShowProjectsDropdown(false)}
+        className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300"
+      >
+        SCO
+      </Link>
+      <Link
+        to="/projects?type=Commercial"
+        onClick={() => setShowProjectsDropdown(false)}
+        className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300"
+      >
+        Commercial
+      </Link>
+      <Link
+        to="/projects?type=Residential"
+        onClick={() => setShowProjectsDropdown(false)}
+        className="block px-4 py-2 text-sm hover:bg-gray-700 hover:text-orange-300"
+      >
+        Residential
+      </Link>
+    </div>
+  )}
+</div>
 
-            <Link to="/career" className={`transition-colors ${isActive('/career') ? 'text-orange-400' : 'hover:text-orange-300'}`}>
+
+            <Link to="/career" className={`transition-colors ${isActive('/career') ? 'text-[#FFD180]' : 'hover:text-[#FFD183]'}`}>
               Career
             </Link>
 
-            <Link to="/contact" className={`transition-colors ${isActive('/contact') ? 'text-orange-400' : 'hover:text-orange-300'}`}>
+            <Link to="/contact" className={`transition-colors ${isActive('/contact') ? 'text-[#FFD180]' : 'hover:text-[#FFD180]'}`}>
               Contact Us
             </Link>
           </div>
@@ -87,7 +106,7 @@ const Navbar = () => {
             </div>
             <button
               onClick={() => navigate('/contact')}
-              className="bg-[#facc15] text-black px-6 py-2 rounded-full hover:bg-[#fde68a] transition-all duration-300 transform hover:scale-105"
+              className="bg-[#FFD180]  text-black px-6 py-2 rounded-full hover:bg-[#fde68a] transition-all duration-300 transform hover:scale-105"
             >
               Enquiry Now
             </button>
@@ -103,11 +122,15 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t border-[#facc15] bg-[#130a06]">
             <div className="flex flex-col space-y-4 pt-4">
-              <Link to="/" className={isActive('/') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>Home</Link>
-              <Link to="/about-company" className={isActive('/about-company') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>About Company</Link>
-              <Link to="/projects" className={isActive('/projects') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>Projects</Link>
-              <Link to="/career" className={isActive('/career') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>Career</Link>
-              <Link to="/contact" className={isActive('/contact') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>Contact Us</Link>
+             <Link to="/" onClick={() => setIsMenuOpen(false)} className={isActive('/') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>Home</Link>
+
+<Link to="/about-company" onClick={() => setIsMenuOpen(false)} className={isActive('/about-company') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>About Company</Link>
+
+<Link to="/projects" onClick={() => setIsMenuOpen(false)} className={isActive('/projects') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>Projects</Link>
+
+<Link to="/career" onClick={() => setIsMenuOpen(false)} className={isActive('/career') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>Career</Link>
+
+<Link to="/contact" onClick={() => setIsMenuOpen(false)} className={isActive('/contact') ? 'text-orange-400' : 'hover:text-orange-300 transition-colors'}>Contact Us</Link>
 
               <div className="flex items-center space-x-2 pt-2">
                 <Phone className="w-4 h-4 text-[#facc15]" />
@@ -117,7 +140,7 @@ const Navbar = () => {
               {/* Mobile CTA */}
               <button
                 onClick={() => {
-                  setIsMenuOpen(false); // close menu after click
+                  setIsMenuOpen(false);
                   navigate('/contact');
                 }}
                 className="bg-gradient-to-r from-orange-400 to-orange-600 text-white px-6 py-2 rounded-full w-fit"
