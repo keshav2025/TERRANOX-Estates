@@ -9,12 +9,12 @@ const TrendingLocations = () => {
       image: 'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=800',
       gradient: 'from-pink-500 to-rose-600'
     },
-    {
-      name: 'Faridabad',
-      properties: '156',
-      image: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=800',
-      gradient: 'from-blue-600 to-indigo-700'
-    },
+    // {
+    //   name: 'Faridabad',
+    //   properties: '156',
+    //   image: 'https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //   gradient: 'from-blue-600 to-indigo-700'
+    // },
     {
       name: 'New Delhi',
       properties: '89',
