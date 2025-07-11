@@ -1,4 +1,5 @@
 import React from 'react';
+import godrej from '/godrej.png';
 
 const properties = [
   {
@@ -6,7 +7,7 @@ const properties = [
     developer: 'Godrej Properties Ltd',
     location: 'Noida',
     price: 'Price on Request',
-    image: 'https://images.pexels.com/photos/1092063/pexels-photo-1092063.jpeg',
+    image: godrej,
     featured: true,
     status: 'Under Construction',
   },

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { MapPin, Filter } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import m3m from '/M3M.webp';
+import godrej from '/godrej.png';
 
 const Projects = () => {
   const location = useLocation();
@@ -20,7 +21,7 @@ const Projects = () => {
       priceValue: 96000000,
       status: 'New Launch',
       category: 'Residential',
-      image: 'https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: godrej
     },
     {
       id: 3,
