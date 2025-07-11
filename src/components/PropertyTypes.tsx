@@ -18,7 +18,7 @@ const PropertyTypes = () => {
             Looking to Buy a new property or sell an existing one?
           </h2>
           <p className="text-xl text-gray-600">
-            Terranox estate LLP provides an awesome solution!
+            Terranox estates LLP provides an awesome solution!
           </p>
         </div>
         

@@ -13,7 +13,7 @@ import Builders from './components/Builders'; // <- import this if route needed
 function App() {
   return (
     <Router>
-      <div className="overflow-x-hidden">
+      <div className=" bg-white text-black dark:bg-[#0f0f0f] dark:text-white   overflow-x-hidden">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

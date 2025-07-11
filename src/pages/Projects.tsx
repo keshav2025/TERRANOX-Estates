@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Filter } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
+import m3m from '/M3M.webp';
 
 const Projects = () => {
   const location = useLocation();
@@ -15,7 +16,7 @@ const Projects = () => {
       title: 'Godrej Riverine',
       developer: 'Godrej Properties Ltd',
       location: 'Noida',
-      price: '₹9.6 Cr',
+      price: 'Price on Request',
       priceValue: 96000000,
       status: 'New Launch',
       category: 'Residential',
@@ -37,18 +38,18 @@ const Projects = () => {
       title: 'M3M The Cullinan',
       developer: 'M3M India',
       location: 'Noida',
-      price: '₹2.43 Cr Onwards',
+      price: 'Price on Request',
       priceValue: 24300000,
       status: 'Upcoming',
       category: 'Residential',
-      image: 'https://images.pexels.com/photos/597909/pexels-photo-597909.jpeg'
+      image: m3m,
     },
     {
       id: 5,
       title: 'Sobha International City',
       developer: 'Sobha Ltd',
       location: 'Gurgaon',
-      price: '₹2.43 Cr Onwards',
+      price: 'Price on Request',
       priceValue: 24300000,
       status: 'Upcoming',
       category: 'Commercial',
@@ -59,7 +60,7 @@ const Projects = () => {
       title: 'Eldeco Centre',
       developer: 'Eldeco Pvt Ltd',
       location: 'Gurgaon',
-      price: '₹2.43 Cr Onwards',
+      price: 'Price on Request',
       priceValue: 24300000,
       status: 'Upcoming',
       category: 'Commercial',
@@ -70,7 +71,7 @@ const Projects = () => {
       title: 'Ace Capitol',
       developer: 'Ace Group',
       location: 'Gurgaon',
-      price: '₹2.43 Cr Onwards',
+      price: 'Price on Request',
       priceValue: 24300000,
       status: 'Under Construction',
       category: 'Commercial',
@@ -81,10 +82,10 @@ const Projects = () => {
       title: 'Elan Miracle',
       developer: 'Elan Group',
       location: 'Gurgaon',
-      price: '₹2.43 Cr Onwards',
+      price: 'Price on Request',
       priceValue: 24300000,
       status: 'Under Construction',
-      category: 'SCO',
+      category: 'Commercial',
       image: 'https://images.pexels.com/photos/618079/pexels-photo-618079.jpeg'
     },
     {
@@ -92,10 +93,10 @@ const Projects = () => {
       title: 'Elan The Mark',
       developer: 'Elan Group',
       location: 'Gurgaon',
-      price: '₹2.43 Cr Onwards',
+      price: 'Price on Request',
       priceValue: 24300000,
       status: 'Under Construction',
-      category: 'SCO',
+      category: 'Commercial',
       image: 'https://images.pexels.com/photos/941195/pexels-photo-941195.jpeg'
     },
     {
@@ -103,10 +104,10 @@ const Projects = () => {
       title: 'Elan Paradise',
       developer: 'Elan Group',
       location: 'Gurgaon',
-      price: '₹2.43 Cr Onwards',
+      price: 'Price on Request',
       priceValue: 24300000,
       status: 'Under Construction',
-      category: 'SCO',
+      category: 'Commercial',
       image: 'https://images.pexels.com/photos/932328/pexels-photo-932328.jpeg'
     },
     {
@@ -114,10 +115,10 @@ const Projects = () => {
       title: 'Elan Empire',
       developer: 'Elan Group',
       location: 'Gurgaon',
-      price: '₹2.43 Cr Onwards',
+      price: 'Price on Request',
       priceValue: 24300000,
       status: 'Under Construction',
-      category: 'SCO',
+      category: 'Commercial',
       image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg'
     }
   ];
@@ -215,7 +216,7 @@ const Projects = () => {
                     <span>{project.location}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-xl font-bold text-gray-900">{project.price}</span>
+                    <span className="text-x font-bold text-gray-900">{project.price}</span>
                     <div className="flex gap-2">
                       <a
                         href={`https://wa.me/917984897775?text=${encodeURIComponent(

@@ -7,14 +7,14 @@ const Career = () => {
   const jobOpenings = [
     {
       id: 1,
-      title: 'Sales Executive',
-      location: 'Gurugram',
+      title: 'Sales Associate',
+      location: 'Noida',
       contact: '+917984897775',
       email: 'admin@terranoxestates.com',
-      company: 'Terranox estate',
-      description: 'We are looking for a dynamic Sales Executive to join our team. The ideal candidate should have excellent communication skills and a passion for real estate.',
+      company: 'Terranox Estates',
+      description: 'We are looking for a dynamic Sales Associate to join our team. The ideal candidate should have excellent communication skills and a passion for real estate.',
       requirements: [
-        'Bachelor\'s degree in any field',
+        "Bachelor's degree in any field",
         '1-3 years of experience in sales',
         'Excellent communication skills',
         'Knowledge of real estate market preferred',
@@ -30,28 +30,98 @@ const Career = () => {
     },
     {
       id: 2,
-      title: 'Marketing Manager',
-      location: 'Sector 126 ,Nodia',
+      title: 'Manager',
+      location: 'Sector 126, Noida',
       contact: '+91-9354442533',
       email: 'terranoxestates@gmail.com',
-      company: 'Terranox estate',
-      description: 'We are seeking an experienced Marketing Manager to develop and execute marketing strategies for our real estate projects.',
+      company: 'Terranox Estates',
+      description: 'We are seeking an experienced Manager to lead and oversee marketing and sales activities for our real estate projects. This role requires strategic thinking, team leadership, and strong execution.',
       requirements: [
         'MBA in Marketing or related field',
-        '3-5 years of marketing experience',
-        'Experience in real estate marketing preferred',
-        'Strong analytical and creative skills',
-        'Proficiency in digital marketing tools'
+        '3-5 years of experience in real estate sales or marketing',
+        'Proven leadership and organizational skills',
+        'Strong analytical and creative thinking abilities',
+        'Proficiency in CRM and digital marketing tools'
       ],
       responsibilities: [
-        'Develop comprehensive marketing strategies',
-        'Manage digital marketing campaigns',
-        'Coordinate with sales team for lead generation',
-        'Analyze market trends and competitor activities',
-        'Manage marketing budget and ROI tracking'
+        'Develop and implement marketing and sales strategies',
+        'Lead and manage the sales team effectively',
+        'Monitor market trends and adjust plans accordingly',
+        'Manage client relations and ensure high customer satisfaction',
+        'Track KPIs, performance, and ROI of campaigns'
+      ]
+    },
+    {
+      id: 3,
+      title: 'Associate Director',
+      location: 'Noida',
+      contact: '+91-9354442533',
+      email: 'admin@terranoxestates.com',
+      company: 'Terranox Estates',
+      description: 'Terranox Estates is hiring an Associate Director to lead strategic business development, oversee operations, and support organizational growth.',
+      requirements: [
+        'Master’s degree in Business Administration or relevant field',
+        '7+ years of experience in real estate or corporate strategy',
+        'Excellent leadership and decision-making skills',
+        'Strong business acumen and client management experience',
+        'Ability to drive results through cross-functional collaboration'
+      ],
+      responsibilities: [
+        'Oversee strategic planning and execution',
+        'Build and maintain key stakeholder relationships',
+        'Identify new business opportunities and partnerships',
+        'Lead performance reviews and operational planning',
+        'Ensure organizational alignment with company goals'
+      ]
+    },
+    {
+      id: 4,
+      title: 'Assistant Manager',
+      location: 'Noida',
+      contact: '+917984897775',
+      email: 'admin@terranoxestates.com',
+      company: 'Terranox Estates',
+      description: 'We are looking for a proactive Assistant Manager to support sales and operations, ensuring smooth coordination across departments.',
+      requirements: [
+        'Bachelor’s degree (MBA preferred)',
+        '2-4 years of experience in real estate or business operations',
+        'Strong communication and organizational skills',
+        'Basic knowledge of real estate industry',
+        'Team-oriented mindset with a problem-solving attitude'
+      ],
+      responsibilities: [
+        'Assist in planning and managing daily operations',
+        'Support the sales and client servicing team',
+        'Coordinate with internal departments for smooth workflow',
+        'Track project timelines and ensure timely updates',
+        'Prepare reports and assist in performance reviews'
+      ]
+    },
+    {
+      id: 5,
+      title: 'Sales Coordinator',
+      location: 'Noida',
+      contact: '+917984897775',
+      email: 'admin@terranoxestates.com',
+      company: 'Terranox Estates',
+      description: 'We are hiring a Sales Coordinator to provide administrative support to the sales team and manage client follow-ups.',
+      requirements: [
+        "Bachelor's degree in Business, Marketing, or a related field",
+        '1-2 years of experience in sales support or coordination',
+        'Proficiency in MS Office and CRM tools',
+        'Strong communication and time-management skills',
+        'Detail-oriented with the ability to multitask'
+      ],
+      responsibilities: [
+        'Coordinate with clients and schedule meetings for the sales team',
+        'Maintain and update CRM records',
+        'Track sales leads and follow up on client inquiries',
+        'Assist in preparing sales proposals and documents',
+        'Support reporting and administrative tasks'
       ]
     }
   ];
+  
 
   const toggleJobExpansion = (jobId: number) => {
     setExpandedJob(expandedJob === jobId ? null : jobId);
@@ -85,7 +155,7 @@ const Career = () => {
               Current Openings
             </h2>
             <p className="text-gray-600">
-              Explore exciting career opportunities with Terranox estate
+              Explore exciting career opportunities with Terranox estates
             </p>
           </div>
           
@@ -103,20 +173,34 @@ const Career = () => {
                         <h3 className="text-xl font-bold text-gray-900">{job.title}</h3>
                       </div>
                       
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-600">
-                        <div className="flex items-center">
-                          <MapPin className="w-4 h-4 mr-2" />
-                          <span><strong>Location:</strong> {job.location}</span>
-                        </div>
-                        <div className="flex items-center">
-                          <Phone className="w-4 h-4 mr-2" />
-                          <span><strong>Contact Number:</strong> {job.contact}</span>
-                        </div>
-                        <div className="flex items-center">
-                          <Mail className="w-4 h-4 mr-2" />
-                          <span><strong>Email Id:</strong> {job.email}</span>
-                        </div>
-                      </div>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600">
+  <div className="flex items-center">
+    <MapPin className="w-4 h-4 mr-2" />
+    <span><strong>Location:</strong> {job.location}</span>
+  </div>
+  <div className="flex items-center">
+    <Mail className="w-4 h-4 mr-2" />
+    <span><strong>Email:</strong> {job.email}</span>
+  </div>
+  <div className="flex items-center">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-4 h-4 mr-2 fill-blue-600"
+      viewBox="0 0 24 24"
+    >
+      <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.3h.1c.7-1.3 2.4-2.6 4.9-2.6 5.2 0 6.2 3.4 6.2 7.8V24h-5v-7c0-1.7 0-4-2.5-4s-2.9 1.9-2.9 3.9V24h-5V8z" />
+    </svg>
+    <a
+      href="https://www.linkedin.com/in/terranox-estate-668671371/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline"
+    >
+      LinkedIn
+    </a>
+  </div>
+</div>
+
                       
                       <div className="mt-4">
                         <p className="text-gray-600"><strong>Company:</strong> {job.company}</p>
@@ -159,15 +243,32 @@ const Career = () => {
                         </ul>
                       </div>
                       
-                      <div className="flex space-x-4 pt-4">
-                        
-                      <a href="tel:+919354442533">
-  <button className="border bg-green-400 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-    Call Now +91 93544 42533
-  </button>
-</a>
+                      <div className="flex flex-wrap gap-4 pt-4">
+  <a href={`mailto:${job.email}`}>
+    <button className="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition-colors flex items-center space-x-2">
+      <Mail className="w-4 h-4" />
+      <span>Email</span>
+    </button>
+  </a>
 
-                      </div>
+  <a
+    href="https://www.linkedin.com/in/terranox-estate-668671371/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button className="bg-[#0077B5] text-white px-5 py-2 rounded-lg hover:bg-[#005983] transition-colors flex items-center space-x-2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-4 h-4 fill-white"
+        viewBox="0 0 24 24"
+      >
+        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.3h.1c.7-1.3 2.4-2.6 4.9-2.6 5.2 0 6.2 3.4 6.2 7.8V24h-5v-7c0-1.7 0-4-2.5-4s-2.9 1.9-2.9 3.9V24h-5V8z" />
+      </svg>
+      <span>LinkedIn</span>
+    </button>
+  </a>
+</div>
+
                     </div>
                   </div>
                 )}
@@ -182,10 +283,10 @@ const Career = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Join Terranox estate?
+              Why Join Terranox estates?
             </h2>
             <p className="text-gray-600">
-              Build your career with India's leading real estate company
+              Build your career with India's leading real estates company
             </p>
           </div>
           

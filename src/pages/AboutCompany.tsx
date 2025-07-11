@@ -14,11 +14,11 @@ const AboutCompany = () => {
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="relative z-10 text-center text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">About Company</h1>
-          <p className="text-xl">Real Estate with The world's investors</p>
+          <p className="text-xl">Real estates with The world's investors</p>
         </div>
       </section>
 
-      {/* About Estatex Section */}
+      {/* About estatesx Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -33,11 +33,11 @@ const AboutCompany = () => {
             
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                About Estatex
+                About Terranox Estates
               </h2>
               
               <p className="text-gray-700 leading-relaxed">
-  At Terranox Estate, we redefine real estate with a client-first approach. Headquartered in Noida, we offer a full spectrum of services including sales, leasing, asset management, and strategic real estate advisory for both commercial and residential segments.
+  At Terranox estates, we redefine real estates with a client-first approach. Headquartered in Noida, we offer a full spectrum of services including sales, leasing, asset management, and strategic real estates advisory for both commercial and residential segments.
 </p>
 
 <p className="text-gray-700 leading-relaxed">
@@ -45,7 +45,7 @@ const AboutCompany = () => {
 </p>
 
 <p className="text-gray-700 leading-relaxed">
-  With over 5 years of proven expertise, we pride ourselves on delivering smooth, result-driven real estate transactions — helping clients navigate challenges with transparency, trust, and long-term value creation.
+  With over <b>7+ years </b> of proven expertise, we pride ourselves on delivering smooth, result-driven real estates transactions — helping clients navigate challenges with transparency, trust, and long-term value creation.
 </p>
 
             </div>
@@ -71,7 +71,7 @@ const AboutCompany = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                To provide exceptional real estate services that exceed client expectations while maintaining the highest standards of integrity, professionalism, and innovation in every transaction.
+                To provide exceptional real estates services that exceed client expectations while maintaining the highest standards of integrity, professionalism, and innovation in every transaction.
               </p>
             </div>
             
@@ -83,7 +83,7 @@ const AboutCompany = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                To be the most trusted and preferred real estate partner in India, known for our expertise, reliability, and commitment to helping clients achieve their property dreams.
+                To be the most trusted and preferred real estates partner in India, known for our expertise, reliability, and commitment to helping clients achieve their property dreams.
               </p>
             </div>
           </div>
@@ -107,7 +107,7 @@ const AboutCompany = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Trusted Partner</h3>
               <p className="text-gray-600">
-                With over 5 years of experience, we have built a reputation as a trusted partner in real estate transactions.
+                With over <b>7+ years </b> of experience, we have built a reputation as a trusted partner in real estates transactions.
               </p>
             </div>
             
@@ -141,7 +141,7 @@ const AboutCompany = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Certificates & Awards
             </h2>
-            <p className="text-gray-600">Recognition of our excellence in real estate services</p>
+            <p className="text-gray-600">Recognition of our excellence in real estates services</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -151,7 +151,7 @@ const AboutCompany = () => {
                   <Award className="w-8 h-8 text-orange-600" />
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">Excellence Award</h3>
-                <p className="text-gray-600 text-sm">Recognition for outstanding service in real estate</p>
+                <p className="text-gray-600 text-sm">Recognition for outstanding service in real estates</p>
               </div>
             ))}
           </div>

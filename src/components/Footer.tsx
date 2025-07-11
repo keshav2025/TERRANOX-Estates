@@ -17,7 +17,7 @@ const Footer = () => {
   </div>
 
   <p className="text-gray-300 text-sm leading-relaxed mb-6">
-    With a collective experience of more than 5 years in the trade, we would be considered perfectly capable to overcome all obstacles in the process of bringing a Real Estate transaction to a smooth closure. <br />
+    With a collective experience of more than <b> 7+  years </b> in the trade, we would be considered perfectly capable to overcome all obstacles in the process of bringing a Real Estate transaction to a smooth closure. <br />
 
   </p>
 
@@ -53,7 +53,7 @@ const Footer = () => {
     <div className="flex space-x-4">
      
       <a href='https://www.instagram.com/terranox_estates?igsh=MTEzcDhjeHptZTl5Zw=='><Instagram className="w-5 h-5 text-gray-400 hover:text-orange-400 cursor-pointer transition-colors" /></a>
-      <Twitter className="w-5 h-5 text-gray-400 hover:text-orange-400 cursor-pointer transition-colors" />
+     <a href='https://x.com/TerranoxEstates'><Twitter className="w-5 h-5 text-gray-400 hover:text-orange-400 cursor-pointer transition-colors" /> </a> 
       <a href="https://www.linkedin.com/in/terranox-estate-668671371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
         <Linkedin className="w-5 h-5 text-gray-400 hover:text-orange-400 cursor-pointer transition-colors" />
       </a>
@@ -65,15 +65,17 @@ const Footer = () => {
           
           {/* Trending Projects */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-6">Trending Projects</h3>
+            <h3 className="text-white font-bold text-lg mb-6">
+Upcoming Projects 
+</h3>
             <ul className="space-y-3">
               <li><a href="/projects?type=SCO" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">M3M The Cullinan</a></li>
               <li><a href="/projects?type=SCO" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">M3M The Line</a></li>
-              <li><a href="projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Trump Towers 1.0</a></li>
-              <li><a href="projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Trump Tower Noida</a></li>
-              <li><a href="projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">JACOB AND CO. Residences</a></li>
+              {/* <li><a href="projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Trump Towers 1.0</a></li> */}
+              {/* <li><a href="projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Trump Tower Noida</a></li>
+              <li><a href="projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">JACOB AND CO. Residences</a></li> */}
               <li><a href="/projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Godrej Riverine             </a></li>
-              <li><a href="/projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Elie Saab Residencies</a></li>
+              {/* <li><a href="/projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Elie Saab Residencies</a></li> */}
         
             </ul>
           </div>
@@ -101,7 +103,7 @@ const Footer = () => {
             <ul className="space-y-3">
              
               <li><a href="/projects?type=SCO" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Noida</a></li>
-              <li><a href="/projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Faridabad</a></li>
+              {/* <li><a href="/projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Faridabad</a></li> */}
               <li><a href="/projects?type=SCO" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">New Delhi</a></li>
               <li><a href="/projects?type=Commercial" className="text-gray-300 hover:text-orange-400 transition-colors text-sm">Gurgaon</a></li>
             </ul>

@@ -15,7 +15,7 @@ const HeroNew: React.FC = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="   relative h-screen flex items-center justify-center overflow-hidden">
       {/* 🔁 Background Video */}
      
    <video
@@ -35,12 +35,13 @@ const HeroNew: React.FC = () => {
 
 
       {/* 🔲 Overlay */}
-      {/* <div className="absolute inset-0 bg-black/60 z-10"></div> */}
+      <div className="absolute inset-0 bg-[#0000ff]/5 z-10"></div>
 
       {/* 🔤 Content */}
       <div className="max-w-4xl mx-auto bg-white/30 border border-white/20 rounded-2xl px-4 py-6 md:p-6 shadow-2xl z-20 w-full">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg mb-4  text-center">
-          <span className="block text-xl sm:text-2xl text-yellow-400">Terranox Estates</span>
+        <span className="block text-xl sm:text-2xl text-[#e2b653]">Terranox Estates</span>
+
           Rooted in Trust, Growing With You.
         </h1>
 

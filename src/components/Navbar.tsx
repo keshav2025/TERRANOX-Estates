@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom'; 
 import { Menu, X, Phone, ChevronDown } from 'lucide-react';
 import logo from '/logo1.webp';
+
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -111,6 +112,7 @@ const Navbar = () => {
             >
               Enquiry Now
             </button>
+            
           </div>
 
           {/* Mobile Menu Toggle */}

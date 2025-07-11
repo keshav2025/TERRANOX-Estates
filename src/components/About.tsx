@@ -7,7 +7,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Title Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Terranox Estate LLP</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Terranox Estates LLP</h2>
           <p className="text-lg text-gray-600">Leading Real Estate Consultants in India</p>
         </div>
 
